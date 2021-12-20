@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { addToCart } from "../actions";
+import { checkOut } from "../actions";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
@@ -14,7 +14,15 @@ const Cart = () => {
       })}
       <span>Total: {total}$</span>
       <br />
-      <button>Checkout</button>
+      <button
+        disabled={total === 0}
+        onClick={() => {
+          dispatch(checkOut(total));
+          total = 0;
+        }}
+      >
+        Checkout
+      </button>
     </div>
   );
 };

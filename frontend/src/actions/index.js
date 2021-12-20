@@ -4,3 +4,10 @@ export const addToCart = (product) => {
     payload: product,
   };
 };
+
+export const checkOut = (total) => {
+  return {
+    type: "CHECKOUT",
+    payload: total,
+  };
+};
