@@ -1,12 +1,12 @@
 import "./index.css";
-import Products from "./components/Products";
-import Cart from "./components/Cart";
+import ProductsList from "./components/ProductsList";
+import CartList from "./components/CartList";
 
 function App() {
   return (
     <div className="App">
-      <Products />
-      <Cart />
+      <ProductsList />
+      <CartList />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../actions";
-const Products = () => {
+const ProductsList = () => {
   const products = useSelector((state) => state.products);
 
   return (
@@ -29,4 +29,4 @@ const Product = ({ object }) => {
   );
 };
 
-export default Products;
+export default ProductsList;
