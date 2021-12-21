@@ -7,7 +7,7 @@ const Cart = () => {
   let total = 0;
   return (
     <div>
-      <h1>Cart</h1>
+      <h1>Cart Items</h1>
       {cart.map((productEntry, index) => {
         total += productEntry.price;
         return <CartItem object={productEntry} key={index} />;
